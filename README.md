@@ -42,6 +42,8 @@ Key features:
     hand-labeling with active learning, bulk-labeling, zero-shot models, and
     weak-supervision in novel data annotation workflows.
 
+PyPI: [https://pypi.org/project/rubrix](https://pypi.org/project/rubrix)
+
 
 Current build status
 ====================
@@ -150,5 +152,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@dcfidalgo](https://github.com/dcfidalgo/)
 * [@sugatoray](https://github.com/sugatoray/)
 
