@@ -1,5 +1,5 @@
 {% set name = "rubrix" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rubrix-{{ version }}.tar.gz
-  sha256: f4b8bfbae443e360659d42d128d6220bcf09590f220d24ca7d82cb71a4250fcb
+  sha256: de3138335358f9c1944ac625478535dd470b9a3b896e7c29ac31c7b0f1e0a16a
 
 build:
   number: 0
@@ -18,10 +18,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - setuptools-scm
   run:
-    - python >=3.6
+    - python >=3.7
     - httpx >=0.15.0,<0.16.0
     - numpy
     - pandas >=1.0.0,<2.0.0
