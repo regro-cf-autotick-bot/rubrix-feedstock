@@ -1,6 +1,6 @@
 {% set name = "rubrix" %}
 {% set version = "0.12.0" %}
-{% set build_num = 1 %}
+{% set build_num = 0 %}
 
 
 #######################################################
@@ -98,6 +98,7 @@ outputs:
         - scikit-learn >=0.24.2
         - stopwordsiso >=0.6.1,<0.7.0
         - uvicorn-standard >0.15.0,<0.18.0
+        - luqum >0.11.0,<0.12.0
         # necessary to pass "pip check"
         - ecdsa <0.15.0
         - pyasn1 ==0.4.8
