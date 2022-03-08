@@ -1,6 +1,6 @@
 {% set name = "rubrix" %}
-{% set version = "0.11.0" %}
-{% set build_num = 1 %}
+{% set version = "0.12.0" %}
+{% set build_num = 0 %}
 
 
 #######################################################
@@ -20,9 +20,9 @@
 #  - setting "use_all_subpackages = False"
 #  - and all other subpackage-switches to "True".
 
-{% set use_all_subpackages = False %}
+{% set use_all_subpackages = false %}
 
-{% set use_server_packages = True %}
+{% set use_server_packages = true %}
 
 #######################################################
 
@@ -35,7 +35,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rubrix-{{ version }}.tar.gz
-  sha256: 581c6d9f5cd3a8e4479535027e88d52b1eabbc1fe0ab199a9591137c46ddcfa3
+  sha256: c49167609c65fe6793093173921b164891a243661fa006b7a15b72d09f350255
 
 build:
   number: {{ build_num }}
@@ -98,6 +98,7 @@ outputs:
         - scikit-learn >=0.24.2
         - stopwordsiso >=0.6.1,<0.7.0
         - uvicorn-standard >0.15.0,<0.18.0
+        - luqum >=0.11.0,<0.12.0
         # necessary to pass "pip check"
         - ecdsa <0.15.0
         - pyasn1 ==0.4.8
