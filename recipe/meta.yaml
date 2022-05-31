@@ -1,5 +1,5 @@
 {% set name = "rubrix" %}
-{% set version = "0.14.1" %}
+{% set version = "0.14.2" %}
 {% set build_num = 0 %}
 
 
@@ -35,7 +35,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rubrix-{{ version }}.tar.gz
-  sha256: 061de59046af43bd22d24cb55909d8fc147680f1137541e3e869b6de161f3b8b
+  sha256: 73bc00f8a7c54cd5100f0698ff7b4f249e1176861f89ac3c48d7404161b557c4
 
 build:
   number: {{ build_num }}
